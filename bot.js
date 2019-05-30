@@ -1,6 +1,6 @@
 ﻿﻿const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "%";\\ كرافكس
+const prefix = "m!";\\ كرافكس
 
 client.on("message", async message => {
     var command = message.content.split(" ")[0];
@@ -88,7 +88,7 @@ client.on("message", async message => {
 });
 
 client.on("message", message => {
-    var prefix = "%";\\كرافكس
+    var prefix = "m!";\\كرافكس
         if (message.author.id === client.user.id) return;
         if (message.guild) {
        let embed = new Discord.RichEmbed()
@@ -140,8 +140,8 @@ client.on("message", async message => {
     }
 });
 
-const adminprefix = "%";\\كرافكس
-const devs = ['اى دى حقك','اى جى شخص اخرى']
+const adminprefix = "m!";\\كرافكس
+const devs = ['533944821228896257']
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -182,7 +182,7 @@ client.on("message", async message => {
 			4-${prefix}setname = الـى تـغـيـر اسـم [ :pencil: ]
 			***
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-			||*** </>~~Me Codes © ***||
+			||*** </>By LuXy© ***||
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬`);
             message.channel.sendEmbed(Ex);
     }
